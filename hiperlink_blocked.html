@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>xxxx</title>
+        <link rel="icon" href="./img/tenna_icono.png">
+        <style>
+            @font-face {
+                font-family: '8bit';
+                src: url('./fuente/8bitOperatorPlus-Bold.ttf');
+            }
+            body {
+                background-color: black;
+                color: white;
+                font-family: '8bit';
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+        </style>
+    </head>
 
-<head>
-    <title>xxxx</title>
-    <link rel="icon" href="./img/tenna_icono.png">
-
-    <style>
-        @font-face {
-            font-family: '8bit';
-            src: url('./fuente/8bitOperatorPlus-Bold.ttf');
-        }
-
-        body {
-            background-color: black;
-            color: white;
-            font-family: '8bit';
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-    </style>
-</head>
-
-<body>
-    <h1>* [[Hyperlink Blocked]].</h1>
-</body>
-
+    <body>
+        <h1>* [[Hyperlink Blocked]].</h1>
+        <audio src="./sonido/error.mp3" id="a_error"></audio>
+        <script>
+            const audio = document.getElementById('a_error');
+            window.addEventListener('click', () => {                   // Busca cliclks
+                audio.currentTime = 0;                                 // Reinicia el audio
+                audio.play();                                          // Lo reproduce
+            });
+        </script>
+    </body>
 </html>
