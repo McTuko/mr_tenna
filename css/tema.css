@@ -1,6 +1,28 @@
+
+@font-face {
+    font-family: 'tvtime';
+    src: url('../fuente/TvTime_v1.ttf');
+}
+
 body {
     background-color: bisque;
 }
+
 header {
     text-align: center;
+    font-family: 'tvtime';
+    font-size: 70px;
+    color: #B52A4F;
+    padding: 30px;
+    margin: 0;
+}
+
+header img {
+    height: 200px;
+    border: 10px solid #F3C976;
+    border-radius: 50%;
+}
+
+h1 {
+    
 }
