@@ -17,10 +17,16 @@ header {
     margin: 0;
 }
 
-header img {
+header .pfp {
     height: 200px;
+    width: 200px;
     border: 10px solid #F3C976;
     border-radius: 50%;
+    background-image: url(../img/tenna_c.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
 }
 
 h1 {
